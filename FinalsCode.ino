@@ -85,13 +85,16 @@ void loop() {
 
       digitalWrite(lockOutput, HIGH);
       digitalWrite(number , HIGH);
-      delay(5000);
+      delay(1000);
       digitalWrite(lockOutput, LOW);
       digitalWrite(number,LOW);
     }
     else {
       // Password is incorrect
       lcd.print("Incorrect");
+      digitalWrite(10 , HIGH);
+      delay(1000);
+      digitalWrite(10,LOW);
       delay(1000);
     }
  
