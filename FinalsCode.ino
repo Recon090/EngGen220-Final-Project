@@ -78,7 +78,7 @@ void loop() {
 
       if (!strcmp(Data, Master)) {
         // Password correct
-        lcd.print("Access Granted");
+        lcd.print("Correct");
         myServo.write(90);  // Unlock
         digitalWrite(lockOutput, HIGH);
         digitalWrite(number, HIGH);
@@ -87,7 +87,7 @@ void loop() {
         digitalWrite(number, LOW);
       } else {
         // Password incorrect
-        lcd.print("Access Denied");
+        lcd.print("Incorrect");
         digitalWrite(10, HIGH);  // Error indicator
         delay(1000);
         digitalWrite(10, LOW);
