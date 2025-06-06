@@ -53,7 +53,7 @@ void setup() {
  
   // Set lockOutput as an OUTPUT pin
   pinMode(lockOutput, OUTPUT);
-  myServo.attach(13);  // Attach servo signal wire to pin D9
+  myServo.attach(12);  // Attach servo signal wire to pin D9
   myServo.write(0);   // Set initial position to 0 degrees
 }
  
